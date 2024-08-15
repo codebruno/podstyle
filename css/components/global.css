@@ -1,0 +1,152 @@
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    transition: background-color var(--transition-medium) var(--transition-ease-in-out), color var(--transition-medium) var(--transition-ease-in-out);
+  }
+/* Container principal */
+.container {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: 0 var(--padding-default);
+  }
+  
+  /* Seções */
+  .section {
+    padding: var(--padding-default);
+    margin: var(--margin-default) 0;
+    background-color: var(--cor-secundaria);
+    border-radius: var(--border-radius-default);
+  }
+  
+  /* Cabeçalho e Rodapé */
+  .header, .footer {
+    width: 100%;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    padding: var(--padding-default);
+    border-bottom: 1px solid var(--cor-borda);
+  }
+  
+  .footer {
+    border-top: 1px solid var(--cor-borda);
+    border-bottom: none;
+  }
+  
+  /* Títulos */
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--cor-texto);
+  }
+  
+  h1 {
+    font-size: var(--font-size-heading-1);
+    line-height: var(--line-height-heading);
+  }
+  
+  h2 {
+    font-size: var(--font-size-heading-2);
+    line-height: var(--line-height-heading);
+  }
+  
+  h3 {
+    font-size: var(--font-size-heading-3);
+    line-height: var(--line-height-heading);
+  }
+  
+  /* Parágrafos */
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    color: var(--cor-texto-secundario);
+    margin-bottom: var(--margin-default);
+  }
+  
+  /* Botões */
+  .button {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-body);
+    padding: var(--button-padding);
+    height: var(--button-height);
+    border: var(--button-border-width) solid var(--button-border-color);
+    border-radius: var(--border-radius-default);
+    background-color: var(--cor-botao);
+    color: var(--cor-texto);
+    text-align: center;
+    text-decoration: none;
+    transition: background-color var(--transition-medium) var(--transition-ease-in-out),
+                color var(--transition-medium) var(--transition-ease-in-out);
+  }
+  
+  .button:hover {
+    background-color: var(--cor-botao-hover);
+    color: var(--cor-link-hover);
+  }
+  
+  /* Cartões */
+  .card {
+    background-color: var(--cor-principal);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+    padding: var(--card-padding);
+    margin: var(--card-margin);
+    transition: box-shadow var(--transition-medium) var(--transition-ease-in-out);
+  }
+  
+  .card:hover {
+    box-shadow: 0 0.75rem 1.5rem var(--cor-sombra);
+  }
+  
+  /* Imagens de Produtos */
+  .product-image {
+    max-width: var(--product-image-max-width);
+    height: var(--product-image-height);
+    object-fit: cover;
+    border-radius: var(--border-radius-default);
+  }
+  
+  /* Links */
+  a {
+    color: var(--cor-link);
+    text-decoration: none;
+    transition: color var(--transition-medium) var(--transition-ease-in-out);
+  }
+  
+  a:hover {
+    color: var(--cor-link-hover);
+  }
+  
+  /* Formulários */
+  input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-body);
+    padding: var(--padding-default);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--border-radius-default);
+    box-shadow: var(--box-shadow-inset);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 0 0.2rem rgba(233, 78, 119, 0.25);
+    outline: none;
+  }
+  
+  /* Outros */
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  

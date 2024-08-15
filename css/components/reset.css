@@ -1,0 +1,196 @@
+/* Define a base font size para o root */
+html {
+    font-size: 62.5%; /* Define o tamanho da fonte base como 10px (62.5% de 16px) para facilitar cálculos */
+}
+
+/* Resetando margem, padding e box-sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Removendo decorações de texto e ajustando cor de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Garantindo que todos os elementos usem o mesmo tamanho de fonte base */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem; /* 16px */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Removendo bordas padrão em elementos interativos */
+button,
+input,
+textarea,
+select {
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Removendo estilos padrão de listas */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+/* Removendo espaçamentos padrão de tabelas e ajustando largura */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* Removendo borda padrão em imagens e maximizando a responsividade */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    display: block;
+}
+
+/* Resetando estilos de formatação de texto */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, figure,
+figcaption, dl, dd {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Tratando todos os botões como botões de bloqueio */
+button {
+    display: block;
+    cursor: pointer;
+}
+
+/* Garantindo que textarea e inputs usem fontes herdadas */
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+/* Garantindo que campos de formulário tenham o mesmo estilo em todos os navegadores */
+input,
+textarea,
+select,
+button {
+    font: inherit;
+    line-height: inherit;
+}
+
+/* Adicionando um estilo de foco visível para acessibilidade */
+:focus {
+    outline: 0.2rem dashed #333; /* 2px */
+    outline-offset: 0.2rem; /* 2px */
+}
+
+/* Tratando figuras e elementos multimídia de maneira consistente */
+figure {
+    margin: 0;
+}
+
+/* Forçando que todos os elementos de bloco tenham largura total */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+/* Normalizando estilos de iframe, embed, object, etc. */
+iframe,
+embed,
+object,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Garantindo que o HTML e o body cubram toda a altura da viewport */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Removendo estilos padrão de botões e inputs do tipo botão */
+button, input[type="button"], input[type="submit"] {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Tratando de elementos abertos e dropdowns */
+summary {
+    cursor: pointer;
+}
+
+/* Resetando estilos de campo de formulário */
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Garantindo que a fonte base seja utilizada em todos os campos */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Garantindo que selects e inputs não se comportem de maneira inesperada */
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+/* Removendo sombra de foco em navegadores como o Chrome */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/* Garantindo que elementos que estão dentro de links ainda possam ser interativos */
+a, button, input, select, textarea {
+    touch-action: manipulation;
+}
+
+/* Resetando estilos padrão de cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.6rem; /* 16px */
+    font-weight: normal;
+}
+
+/* Removendo espaçamentos internos de formulários */
+input, button, textarea, select {
+    margin: 0;
+}
+
+/* Garantindo que os botões não fiquem com borda arredondada em navegadores que forçam esse estilo */
+button {
+    border-radius: 0;
+}
+
+/* Removendo marcadores de listas */
+ul, ol {
+    padding-left: 0;
+}
+
+/* Definindo largura mínima em botões para garantir acessibilidade */
+button {
+    min-width: 2.75rem; /* 44px */
+    min-height: 2.75rem; /* 44px */
+}

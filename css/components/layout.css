@@ -1,0 +1,199 @@
+/* Estilos para a seção principal com carousel */
+#main-carousel {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent; /* Remove a cor de fundo */
+    color: var(--cor-texto);
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: cover;
+    transition: transform var(--transition-medium) var(--transition-ease-in-out), filter var(--transition-medium) var(--transition-ease-in-out);
+}
+
+/* Efeito de zoom e filtro na imagem ao passar o mouse */
+.carousel-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.85);
+}
+
+/* Efeito de animação no texto usando keyframes */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-default);
+    color: var(--cor-texto);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Keyframes para o efeito de animação */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilização dos controles do carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-texto);
+    transition: color var(--transition-medium) var(--transition-ease-in-out);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--cor-destaque);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    font-size: 2rem;
+    color: var(--cor-texto);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: var(--cor-link-hover);
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: var(--cor-link-hover);
+    box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+/* Posição dos controles */
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+/* Estilos dos slides em movimento */
+.carousel-item-next,
+.carousel-item-prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform var(--transition-medium) var(--transition-ease-in-out);
+}
+
+.carousel-item-next {
+    transform: translateX(100%);
+}
+
+.carousel-item-prev {
+    transform: translateX(-100%);
+}
+
+.carousel-item.active {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Estilos para a seção de serviços */
+#services {
+    background-color: var(--cor-secundaria);
+    padding: var(--padding-default) 0;
+    text-align: center;
+    min-height: 20rem; /* Ajusta a altura mínima conforme necessário */
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--cor-texto);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--margin-default);
+}
+
+.service-item {
+    background-color: var(--cor-principal); /* Mantém o fundo dos itens */
+    border-radius: var(--border-radius-default);
+    padding: 2rem;
+    box-shadow: var(--box-shadow-default);
+    transition: transform var(--transition-medium) var(--transition-ease-in-out);
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: var(--cor-destaque);
+    margin-bottom: 1rem;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.service-item p {
+    font-size: 1.4rem;
+    color: var(--cor-texto-secundario);
+}
+
+/* Efeito de Hover */
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0.5rem var(--cor-sombra);
+}

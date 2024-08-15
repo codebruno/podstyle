@@ -1,0 +1,102 @@
+:root {
+  /* Cores principais */
+  --cor-principal: #1e1e1e; /* Escuro - fundo principal */
+  --cor-secundaria: #2c2c2c; /* Cinza escuro - fundo secundário */
+  --cor-destaque: #0095ff; /* Azul moderno - cor de destaque */
+
+  /* Cores de texto */
+  --cor-texto: #f5f5f5; /* Branco - texto principal */
+  --cor-texto-secundario: #b0b0b0; /* Cinza claro - texto secundário */
+
+  /* Cores de botões e links */
+  --cor-botao: #3a3a3a; /* Cinza escuro - fundo do botão */
+  --cor-botao-hover: #555; /* Cinza médio - fundo do botão ao passar o mouse */
+  --cor-link: #0095ff; /* Azul moderno - cor dos links */
+  --cor-link-hover: #66b3ff; /* Azul claro - cor dos links ao passar o mouse */
+
+  /* Cores de borda e sombra */
+  --cor-borda: #333; /* Cinza escuro - bordas */
+  --cor-sombra: rgba(0, 0, 0, 0.5); /* Sombra - preto com opacidade */
+
+  /* Cores de estado */
+  --cor-sucesso: #4caf50; /* Verde - cor de sucesso */
+  --cor-erro: #f44336; /* Vermelho - cor de erro */
+  --cor-aviso: #ff9800; /* Laranja - cor de aviso */
+
+  /* Tamanhos de fontes */
+  --font-size-heading-1: 3rem; /* Tamanho da fonte para o título principal (h1) */
+  --font-size-heading-2: 2.5rem; /* Tamanho da fonte para títulos secundários (h2) */
+  --font-size-heading-3: 2rem; /* Tamanho da fonte para subtítulos (h3) */
+  --font-size-body: 1.6rem; /* Tamanho da fonte para parágrafos */
+  --font-size-small: 1.4rem; /* Tamanho da fonte para textos menores */
+
+  /* Altura de linha */
+  --line-height-heading: 1.2; /* Altura da linha para títulos */
+  --line-height-body: 1.6; /* Altura da linha para parágrafos */
+
+  /* Largura máxima */
+  --max-width-container: 120rem; /* Largura máxima do container (1200px) */
+
+  /* Espaçamento entre letras */
+  --letter-spacing-heading: 0.1rem; /* Espaçamento entre letras para títulos */
+  --letter-spacing-body: 0.05rem; /* Espaçamento entre letras para parágrafos */
+
+  /* Espaçamento entre palavras */
+  --word-spacing: 0.1rem; /* Espaçamento entre palavras em textos */
+
+  /* Altura padrão para seções */
+  --section-height: 40rem; /* Altura padrão para seções */
+  
+  /* Espaçamentos */
+  --margin-default: 2rem; /* Margem padrão entre elementos */
+  --padding-default: 2rem; /* Padding padrão dentro dos elementos */
+
+  /* Botões */
+  --button-height: 3rem; /* Altura padrão para botões */
+  --button-width: auto; /* Largura dos botões, pode ser ajustada conforme necessário */
+  --button-padding: 1rem 2rem; /* Padding dentro dos botões */
+
+  /* Bordas e sombras */
+  --border-radius-default: 0.5rem; /* Borda arredondada padrão */
+  --box-shadow-default: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Sombra padrão para caixas */
+  --box-shadow-inset: inset 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Sombra inset padrão para campos de entrada */
+
+  /* Tempo de Transição */
+  --transition-fast: 0.2s; /* Transição rápida */
+  --transition-medium: 0.4s; /* Transição média */
+  --transition-slow: 0.6s; /* Transição lenta */
+
+  /* Função de Transição */
+  --transition-ease-in-out: cubic-bezier(0.42, 0, 0.58, 1); /* Acelera e desacelera */
+  --transition-ease-in: cubic-bezier(0.42, 0, 1, 1); /* Acelera */
+  --transition-ease-out: cubic-bezier(0, 0, 0.58, 1); /* Desacelera */
+  --transition-linear: linear; /* Transição linear */
+
+  /* Efeitos de Hover */
+  --hover-opacity: 0.8; /* Opacidade ao passar o mouse */
+  --hover-transform-scale: 1.05; /* Escala ao passar o mouse */
+  --hover-transform-rotate: 5deg; /* Rotação ao passar o mouse */
+  --hover-background-color: var(--cor-link-hover); /* Cor de fundo ao passar o mouse */
+  --hover-border-color: var(--cor-link); /* Cor da borda ao passar o mouse */
+
+  /* Layout e Tipografia */
+  --header-height: 6rem; /* Altura do cabeçalho */
+  --footer-height: 4rem; /* Altura do rodapé */
+  --card-border-radius: 1rem; /* Borda arredondada para cartões */
+  --product-image-max-width: 100%; /* Largura máxima da imagem do produto */
+  --product-image-height: 20rem; /* Altura da imagem do produto */
+  --product-title-font-size: 2rem; /* Tamanho da fonte para o título do produto */
+  --product-price-font-size: 1.8rem; /* Tamanho da fonte para o preço do produto */
+  --product-description-font-size: 1.4rem; /* Tamanho da fonte para a descrição do produto */
+
+  /* Efeitos de Botão */
+  --button-border-width: 1px; /* Largura da borda do botão */
+  --button-border-color: var(--cor-botao); /* Cor da borda do botão */
+  --button-transition: background-color var(--transition-medium) var(--transition-ease-in-out),
+                        color var(--transition-medium) var(--transition-ease-in-out); /* Transições de botão */
+
+  /* Efeitos de Card */
+  --card-shadow: 0 0.5rem 1rem var(--cor-sombra); /* Sombra do cartão */
+  --card-padding: 2rem; /* Padding dentro dos cartões */
+  --card-margin: 1.5rem; /* Margem entre cartões */
+}
