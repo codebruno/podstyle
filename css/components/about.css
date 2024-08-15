@@ -1,0 +1,50 @@
+/* Estilos para a Seção "Quem Somos" */
+#quem-somos {
+    background-color: var(--cor-principal);
+    padding: var(--padding-default) 0;
+    color: var(--cor-texto);
+}
+
+#quem-somos .section-title {
+    font-size: var(--font-size-heading-2);
+    font-weight: 700;
+    margin-bottom: var(--margin-default);
+}
+
+#quem-somos .section-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    color: var(--cor-texto-secundario);
+    margin-bottom: var(--margin-default);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.founder-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 5px solid var(--cor-destaque);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.founder-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.founder-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    color: var(--cor-texto);
+}
+
+.founder-role {
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+}

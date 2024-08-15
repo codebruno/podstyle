@@ -136,3 +136,143 @@
 .text-center {
     text-align: center;
 }
+
+/* Novos Produtos */
+/* Estilos para a Seção de Novos Produtos */
+#novos-produtos {
+    background-color: var(--cor-secundaria);
+    padding: var(--padding-default); /* Adiciona padding ao redor da seção */
+}
+
+#novos-produtos .section-title {
+    font-size: var(--font-size-heading-2); /* Ajuste o tamanho para igualar ao da seção Produtos */
+    color: var(--cor-texto);
+    font-weight: 700;
+    margin-bottom: var(--margin-default);
+}
+
+#novos-produtos .section-subtitle {
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-texto-secundario);
+    font-size: 1.4rem; /* Aumenta um pouco o tamanho do subtítulo */
+    margin-bottom: var(--margin-default);
+}
+
+/* Estilização dos Cards */
+#novos-produtos .card {
+    border: none;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-medium) var(--transition-ease-in-out);
+}
+
+#novos-produtos .card:hover {
+    transform: translateY(-0.5rem);
+}
+
+#novos-produtos .card-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+#novos-produtos .card-img-top {
+    object-fit: cover;
+    transition: transform var(--transition-medium) var(--transition-ease-in-out);
+    width: var(--product-image-max-width);
+    height: var(--product-image-height);
+}
+
+#novos-produtos .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+#novos-produtos .price .original-price {
+    text-decoration: line-through;
+    color: var(--cor-texto-secundario);
+}
+
+#novos-produtos .price .promotional-price {
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+#novos-produtos .price .installment {
+    color: var(--cor-texto-secundario);
+}
+
+
+/* Estilos para a Seção de Acessórios */
+#acessorios {
+    background-color: var(--cor-secundaria);
+    padding: var(--padding-default); /* Adiciona padding ao redor da seção */
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+#acessorios .section-title {
+    font-size: var(--font-size-heading-2); /* Ajuste o tamanho para ser consistente */
+    color: var(--cor-texto);
+    font-weight: 700;
+    margin-bottom: var(--margin-default);
+}
+
+#acessorios .section-subtitle {
+    font-family: 'Poppins', sans-serif;
+    color: var(--cor-texto-secundario);
+    font-size: 1.4rem; /* Ajusta o tamanho do subtítulo */
+    margin-bottom: var(--margin-default);
+}
+
+/* Estilização dos Cards */
+#acessorios .card {
+    border: none;
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-medium) var(--transition-ease-in-out);
+}
+
+#acessorios .card:hover {
+    transform: translateY(-0.5rem);
+}
+
+#acessorios .card-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+#acessorios .card-img-top {
+    object-fit: cover;
+    transition: transform var(--transition-medium) var(--transition-ease-in-out);
+    width: var(--product-image-max-width);
+    height: var(--product-image-height);
+}
+
+#acessorios .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+#acessorios .price .original-price {
+    text-decoration: line-through;
+    color: var(--cor-texto-secundario);
+}
+
+#acessorios .price .promotional-price {
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+#acessorios .price .installment {
+    color: var(--cor-texto-secundario);
+}
+
+/* Estilização do botão de comprar */
+#acessorios .btn-primary {
+    background-color: var(--cor-destaque);
+    border: none;
+    transition: background-color var(--transition-medium) var(--transition-ease-in-out);
+}
+
+#acessorios .btn-primary:hover {
+    background-color: var(--cor-link-hover);
+}
