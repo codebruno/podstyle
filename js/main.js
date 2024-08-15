@@ -1,28 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const loadMoreButton = document.getElementById('load-more');
-    const productCards = document.querySelectorAll('.product-cards .card');
-    let visibleCards = 4;
+document.addEventListener('DOMContentLoaded', function() {
+    const cards = Array.from(document.querySelectorAll('.product-card'));
+    const loadMoreBtn = document.getElementById('load-more');
+    let visibleCount = 4;
 
-    // Inicialmente, esconder todos os cards além dos 4 primeiros
-    productCards.forEach((card, index) => {
-        if (index >= visibleCards) {
-            card.classList.add('hidden');
-        }
-    });
-
-    loadMoreButton.addEventListener('click', () => {
-        // Mostrar mais 4 cards
-        visibleCards += 4;
-
-        productCards.forEach((card, index) => {
-            if (index < visibleCards) {
-                card.classList.remove('hidden');
+    function updateCards() {
+        cards.forEach((card, index) => {
+            if (index < visibleCount) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
             }
         });
+    }
 
-        // Se todos os cards estiverem visíveis, esconder o botão "Carregar Mais"
-        if (visibleCards >= productCards.length) {
-            loadMoreButton.classList.add('hidden');
-        }
+    loadMoreBtn.addEventListener('click', () => {
+        visibleCount += 4;
+        updateCards();
     });
+
+    updateCards(); // Initialize the visibility of cards
 });

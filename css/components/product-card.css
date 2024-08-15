@@ -1,0 +1,138 @@
+/* Estilos para a seção de produtos */
+#product-section {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    padding: var(--padding-default) 0;
+}
+
+/* Estilo para o cabeçalho da seção de produtos */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--margin-default);
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-texto);
+    margin: 0;
+}
+
+/* Estilo para os cards de produtos */
+.product-card {
+    background-color: var(--cor-secundaria);
+    border-radius: var(--border-radius-default);
+    box-shadow: var(--box-shadow-default);
+    overflow: hidden;
+    margin-bottom: var(--margin-default);
+    transition: box-shadow var(--transition-medium) var(--transition-ease-in-out);
+}
+
+/* Estilo para a imagem do produto */
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    transition: transform var(--transition-medium) var(--transition-ease-in-out);
+}
+
+/* Efeito de zoom na imagem do produto ao passar o mouse */
+.product-card:hover .product-image {
+    transform: scale(1.1);
+}
+
+/* Estilo para o badge de desconto */
+.discount-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: var(--border-radius-default);
+}
+
+/* Estilo para as informações do produto */
+.product-info {
+    padding: var(--padding-default);
+}
+
+.product-title {
+    font-size: var(--product-title-font-size);
+    margin-bottom: 0.5rem;
+}
+
+.product-description {
+    font-size: var(--font-size-small);
+    margin-bottom: 1rem;
+}
+
+.product-rating {
+    margin-bottom: 1rem;
+}
+
+.product-pricing {
+    font-size: var(--font-size-body);
+    margin-bottom: 1rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: var(--cor-texto-secundario);
+}
+
+.discounted-price {
+    color: var(--cor-destaque);
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.installments {
+    font-size: var(--font-size-small);
+}
+
+/* Estilo para o botão de compra */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius-default);
+    text-decoration: none;
+    transition: background-color var(--transition-medium) var(--transition-ease-in-out);
+}
+
+/* Efeito de hover no botão de compra */
+.btn-primary:hover {
+    background-color: darken(var(--cor-destaque), 10%);
+}
+
+/* Estilo para o botão "Carregar Mais" */
+.btn-load-more {
+    display: inline-block; /* Altere para inline-block para largura ajustada */
+    width: auto; /* Ajuste a largura conforme necessário */
+    max-width: 200px; /* Define um máximo para a largura do botão */
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto);
+    padding: 1rem;
+    border-radius: var(--border-radius-default);
+    border: none;
+    font-size: var(--font-size-body);
+    margin-top: 2rem;
+    transition: background-color var(--transition-medium) var(--transition-ease-in-out);
+}
+
+/* Efeito de hover no botão "Carregar Mais" */
+.btn-load-more:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+/* Centralização do botão */
+.text-center {
+    text-align: center;
+}
