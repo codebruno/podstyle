@@ -1,6 +1,6 @@
 /* Estilos para a seção de produtos */
 #product-section {
-    background-color: var(--cor-principal);
+    background-color: transparent; /* Remove a cor de fundo */
     color: var(--cor-texto);
     padding: var(--padding-default) 0;
 }
