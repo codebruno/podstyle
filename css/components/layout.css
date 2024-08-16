@@ -4,8 +4,15 @@
     overflow: hidden;
     background-color: transparent; /* Remove a cor de fundo */
     color: var(--cor-texto);
+    margin-top: 5%;
 }
 
+@media (max-width: 768px) {
+    #main-carousel {
+        margin-top: 20%;
+    }
+}
+  
 .carousel-inner {
     position: relative;
 }
