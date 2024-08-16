@@ -1,0 +1,51 @@
+/* Seção de Depoimentos */
+#depoimentos .section-title {
+    font-size: var(--font-size-heading-2);
+    color: var(--cor-texto);
+    font-weight: 700;
+    margin-bottom: var(--margin-default);
+  }
+  
+  #depoimentos .section-description {
+    font-size: var(--font-size-body);
+    color: var(--cor-texto-secundario);
+    margin-bottom: var(--margin-default);
+  }
+  
+  #depoimentos .testimonial-card {
+    background-color: var(--cor-principal);
+    border-radius: var(--border-radius-default);
+    box-shadow: var(--box-shadow-default);
+    transition: transform var(--transition-medium) var(--transition-ease-in-out),
+                box-shadow var(--transition-medium) var(--transition-ease-in-out);
+  }
+  
+  #depoimentos .testimonial-card:hover {
+    transform: scale(var(--hover-transform-scale));
+    box-shadow: var(--card-shadow);
+  }
+  
+  #depoimentos .testimonial-name {
+    font-size: var(--font-size-heading-3);
+    color: var(--cor-texto);
+    margin-bottom: 0.5rem;
+  }
+  
+  #depoimentos .testimonial-role {
+    font-size: var(--font-size-small);
+    color: var(--cor-texto-secundario);
+    margin-bottom: 1rem;
+  }
+  
+  #depoimentos .testimonial-text {
+    font-size: var(--font-size-body);
+    color: var(--cor-texto);
+    font-style: italic;
+  }
+  
+  #depoimentos .bi-chat-quote-fill {
+    font-size: 2rem;
+    color: var(--cor-destaque);
+    margin-top: 1rem;
+  }
+  
