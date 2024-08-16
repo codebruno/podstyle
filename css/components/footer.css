@@ -1,130 +1,142 @@
 /* Rodapé */
 #footer {
-    background-color: #0095ff; /* Azul moderno */
-    color: var(--cor-texto);
-    padding: 2rem 1rem;
-    position: relative;
-  }
-  
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-columns {
-    display: flex;
-    flex-wrap: wrap; /* Permite que as colunas se ajustem conforme a tela */
-    justify-content: center;
-    width: 100%;
-    max-width: var(--max-width-container);
-  }
-  
-  .footer-column {
-    flex: 1;
-    margin: 0.5rem;
-    padding: 1rem;
-    border-radius: var(--border-radius-default);
-    background-color: var(--cor-secundaria);
-  }
-  
-  .footer-column h5 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--cor-destaque);
-  }
-  
-  .footer-column p,
-  .footer-column a {
-    color: var(--cor-texto);
-    font-size: 1rem;
-  }
-  
-  .footer-column a {
-    text-decoration: none;
-    transition: color var(--transition-medium);
-  }
-  
-  .footer-column a:hover {
-    color: var(--cor-link-hover);
-  }
-  
-  .social-link {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--cor-texto);
-    transition: color var(--transition-medium);
-  }
-  
-  .social-link:hover {
-    color: var(--cor-link);
-  }
-  
-  .quick-link {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--cor-texto);
-    text-decoration: none;
-    transition: color var(--transition-medium);
-  }
-  
-  .quick-link:hover {
-    color: var(--cor-link);
-  }
-  
-  .floating-icons {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .whatsapp-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--cor-destaque);
-    color: var(--cor-texto);
-    width: 4rem; /* Tamanho aumentado do ícone */
-    height: 4rem; /* Tamanho aumentado do ícone */
-    border-radius: 50%;
-    box-shadow: var(--box-shadow-default);
-    transition: background-color var(--transition-medium), transform var(--transition-medium);
-    text-align: center;
-    font-size: 2rem; /* Tamanho do ícone */
-    animation: pulse 1.5s infinite; /* Animação de piscar */
-  }
-  
-  .whatsapp-icon:hover {
-    background-color: var(--cor-link);
-    transform: scale(1.1);
-  }
-  
-  .footer-bottom {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: var(--cor-secundaria);
-    border-top: 1px solid var(--cor-borda);
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-    font-size: 1rem;
-    color: var(--cor-texto-secundario);
-  }
-  
-  /* Animação de Piscar */
-  @keyframes pulse {
-    0% {
+  background-color: #0095ff; /* Azul moderno */
+  color: var(--cor-texto);
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as colunas se ajustem conforme a tela */
+  justify-content: center;
+  width: 100%;
+  max-width: var(--max-width-container);
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: var(--border-radius-default);
+  background-color: var(--cor-secundaria);
+}
+
+.footer-column h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--cor-destaque);
+}
+
+.footer-column p,
+.footer-column a {
+  color: var(--cor-texto);
+  font-size: 1rem;
+}
+
+.footer-column a {
+  text-decoration: none;
+  transition: color var(--transition-medium);
+}
+
+.footer-column a:hover {
+  color: var(--cor-link-hover);
+}
+
+.social-link {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+  transition: color var(--transition-medium);
+}
+
+.social-link:hover {
+  color: var(--cor-link);
+}
+
+.quick-link {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+  text-decoration: none;
+  transition: color var(--transition-medium);
+}
+
+.quick-link:hover {
+  color: var(--cor-link);
+}
+
+.floating-icons {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto);
+  width: 4rem; /* Tamanho aumentado do ícone */
+  height: 4rem; /* Tamanho aumentado do ícone */
+  border-radius: 50%;
+  box-shadow: var(--box-shadow-default);
+  transition: background-color var(--transition-medium), transform var(--transition-medium);
+  text-align: center;
+  font-size: 2rem; /* Tamanho do ícone */
+  animation: pulse 1.5s infinite; /* Animação de piscar */
+}
+
+.whatsapp-icon:hover {
+  background-color: var(--cor-link);
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--cor-secundaria);
+  border-top: 1px solid var(--cor-borda);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--cor-texto-secundario);
+}
+
+/* Animação de Piscar */
+@keyframes pulse {
+  0% {
       opacity: 1;
-    }
-    50% {
+  }
+  50% {
       opacity: 0.7;
-    }
-    100% {
-      opacity: 1;
-    }
   }
-  
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .footer-columns {
+      flex-direction: column; /* Colunas em uma única coluna no mobile */
+      align-items: center;
+  }
+
+  .footer-column {
+      width: 100%; /* Coluna ocupa toda a largura */
+      margin: 0.5rem 0; /* Margem ajustada */
+  }
+}
